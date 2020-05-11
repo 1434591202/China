@@ -1,0 +1,132 @@
+.SGbeijin{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: 60px;
+	background-image: url(../../img/soul/beijingtu.jpg);
+	
+}
+.scientist{
+	height: 250px;
+	border-bottom: 2px solid #999;
+	margin: 20px 0;
+}
+.scientist>img{
+	width: 20%;
+	height: 90%;
+}
+.evMore{
+	width: 150px;
+	height: 50px;
+	border: 1px solid  #FCA311;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 70px;
+	margin: 100px auto 0;
+}
+.evMore>a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: #000;
+}
+.evMore>a:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 103%;
+    background-color: #FCA311;
+    border-radius:5px;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    z-index: -1;
+    transition: width 0.5s;
+}
+.evMore>a:hover{
+	color: #fff;
+}
+.evMore>a:hover:before{
+	width: 102%;
+}
+
+.scientistP{
+	width: 100%;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.topHeight{
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+	cursor: pointer;
+
+}
+.topHeight>span{
+	font-size: 50px;	
+}
+@media(max-width:768px ){
+	.scientistP{
+		height: 75px;
+		-webkit-line-clamp: 3;
+	}
+	.evMore{
+		width: 120px;
+		margin-top: 0px;
+	}
+	.scientist h3{
+		margin: 0px;
+		display: -webkit-box;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 3;
+	}
+	.scientist>img{
+		width: 50%;
+		height: 80%;
+	}
+}
+@media (min-width: 540px)  and (max-width: 768px){
+	.scientist{
+		height: 400px;
+	}
+	.scientistP{
+		height: 240px;
+		-webkit-line-clamp: 10;
+	}
+}
+
+@media (min-width: 768px)  and (max-width: 992px){
+	.scientistP{
+		height: 170px;
+		-webkit-line-clamp: 7;
+	}
+	.scientist>img{
+		width: 25%;
+	}
+	.scientist h3{
+		margin: 0px;
+		display: -webkit-box;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 2;
+	}
+}
+@media (min-width:  992px)  and (max-width: 1200px){
+	.scientist{
+		height: 300px;
+	}
+	.scientist>img{
+		width: 25%;
+	}
+}
+@media(min-width:1200px ){
+	
+}

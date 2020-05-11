@@ -1,0 +1,414 @@
+@font-face {
+	 font-family: myFirstFont;
+	src:url('../iconfont/huawen.TTF'); /* IE9 */
+}
+.LineKay{
+	font-family: myFirstFont;
+}
+html, body{ margin:0; height:100%;
+}
+a{
+	text-decoration: none;
+}
+.trigger{
+	position: fixed;
+	bottom: 3%;
+	left: 5%;
+	z-index: 100000;
+}
+.trigger>a{
+	text-decoration: none;
+}
+.trigger>a>span{
+	font-size: 50px;
+	color: #ccc;
+}
+.trigger>a>span:hover{
+	color: #FCA311;
+}
+.trigger>div{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.trigger>div>a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.trigger>.leftTrigger{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: red;
+}
+.trigger>.rightTrigger{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.furthest{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index:-1;
+	background-image: url("../img/chinaD.jpg");
+	background-size: 100% 100%;
+}
+.navLogo{
+	position: absolute;
+	top: 2%;
+	z-index: 300;
+	width: 100%;
+}
+.logo{
+	position: absolute;
+	left:3%;
+	width: 80px;
+	height: 20px;
+}
+.bottomNav{
+	position: absolute;
+	bottom: 10%;
+	width:100%;
+	z-index: 200;
+	font-size: 40px;
+	text-align: center;  
+}
+.bottomNav>span{
+	opacity: 0.5;
+	color: #fff;
+	font-size: 50px;
+}
+.bottomNav>span:hover{
+	cursor:pointer;
+}
+.navIcon>span{
+	border: 1px solid #f4f6c4;
+	font-size: 25px;
+	position: absolute;
+	right:5%;
+	color: #fff;
+}
+.navIcon>span:hover{
+	cursor:pointer;
+}
+
+.navImgBox{
+    width:100%;
+    height: 89%;
+    margin-bottom: 2%;
+}
+.navImgBox>.swiper-wrapper>.swiper-slide>img{
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+}
+.navTion{
+	position:absolute;
+    left: 0;
+    top: 50%;
+}
+.navTion>span{
+	font-size: 50px;
+}
+.navBgShade{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(129,143,66,0.5);
+	z-index: 100;
+}
+.party{
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	z-index: 120;
+}
+.partyMy{
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	z-index: 120;
+	font-size: 120px;
+	color: #fff;
+}
+.partyMyP{
+	position: absolute;
+	z-index: 120;
+	font-size: 30px;
+	color: #fff;
+}
+.partyMyPotion{
+	top: 12%;
+	right: 20%;
+}
+.partyMyPotion1{
+	top: 20%;
+	right: 15%;
+}
+.partyMyPotion2{
+	top: 30%;
+	right: 16%;
+}
+.partyMyPotion3{
+	width: 20%;
+	bottom: 0;
+	right: 0;
+}
+.party>div{
+	font-size: 30px;
+	color: #fff;
+}
+.party>div>p{
+	color:#F47D7D;
+	display: inline;
+}
+.party>p{
+	color: #fff;
+	font-size: 20px;
+	margin:20px 0;
+}
+.swiper-pagination-custom{
+	width: 100px;
+	height: 50px;
+	background-color: yellow;
+}
+.screenHeight{
+	width:100%;
+	background-color:#fff;
+	box-shadow:1px -1px 1px  #002B5A;
+}
+.chinaNtroduce>img{
+	margin-top:100px;
+}
+.chinaNtroduceA{
+	padding-top: 50px;
+}
+.chinaNtroduce>div>a{
+	color: #000;
+	text-decoration: none;
+}
+.chinaNtroduce>div>a:hover{
+	color: #FCA311;
+}
+.chinaNtroduceText>div{
+	margin: 40px 0;
+}
+.chinaNtroduceMore{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.more{
+	font-size: 20px;
+	margin-left: 10px;
+	color: #002B5A;;
+}
+.more:hover{
+	cursor:pointer;
+	color: #FCA311;
+
+}
+.chinaNtroduceImg{
+	text-align: center;
+}
+.chinaNtroduceWireLfte{
+	height: 2px;
+	background-color:#002B5A;
+	margin: 70px 0 40px 0;
+}
+.chinaNtroduceWireRight{
+	padding-top: 0.5px;
+	height: 1px;
+	background-color: #002B5A;
+	margin: 70px 0 40px 0;
+}
+.chronicle{
+	margin:0;
+	padding:0;
+	font-size:35px; 
+	text-align:center;
+}
+.chronicleText{
+	margin-top: 47px;
+}
+.chronicleTextSpan{
+	text-align: center;
+}
+.chronicleTextSpan>span{
+	font-size: 50px;
+}
+.chronicleTextP{
+	padding-top: 10px;
+}
+.chronicleTextP>a{
+	color: #000;
+	text-decoration: none;
+}
+.chronicleTextP>a:hover{
+	color: #FCA311;
+}
+.chronicleTextBox{
+	margin-bottom: 50px;
+}
+.chronicleTextBox>div{
+	padding-top: 10px;
+}
+.chronicleTextBox>div>img{
+	width: 50px;
+	height: 50px;
+}
+.header{
+	margin-top: 100px;
+	height: 350px;
+}
+.headerImg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/chengshi.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 110;
+}
+.headerShade{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.4;
+	z-index: 120;
+	top: 0;
+}
+.headerShadeLeft{
+	left: 0;	
+}
+.headerShadeRight{
+	right: 0;	
+}
+.headerText{
+	width: 30%;
+	height: 50%;
+	z-index: 150;
+	position: absolute;
+	color: #fff;
+	top: 25%;
+}
+.headerTextLeft{
+	left: 10%;
+}
+.headerTextRight{
+	right: 10%;
+}
+.futpe{
+	margin-top: 50px;
+}
+.futpeLfte{
+	height: 1px;
+	background-color: #002B5A;;
+	margin: 10px 0 60px 0;
+}
+.futpeRight{
+	padding-top: 0.5px;
+	height: 1px;
+	background-color: #002B5A;;
+	margin: 10px 0 60px 0;
+}
+.futpeYear{
+	text-align: right;
+}
+.navBottom{
+	width: 100%;
+	height: 7%;
+	color: #000;
+}
+.navBottomUl>li{
+	list-style-type: none;
+	float: left;
+	width: 18%;
+	text-align: center;
+}
+.navBottomUlLink{
+	color: #FCA311;
+}
+
+.navBottomUl>li:hover{
+	cursor: pointer;
+}
+
+.navBottomUl>li>a{
+	width: 100%;
+	height: 100%;
+	display:block;
+}
+
+.navBottomUl>li:hover a,
+.navBottomUl>li:focus a{
+	color: #FCA311;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	text-decoration: none;
+}
+.footer{
+	margin-top: 40px;
+	margin-bottom: 30px;
+	height: 50px;
+	line-height: 30px;
+	text-align: center;
+}
+.indexMode{
+	text-align: center;
+	margin-top: 50px;
+}
+.indexMode>a{
+	border: 1px solid #FCA311;
+	width: 180px;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	line-height: 50px;
+	border-radius: 10px;
+	color:#000;
+	text-decoration: none;
+	z-index: 1;
+	position: relative;
+	font-size: 18px;
+	
+}
+.indexMode>a>div{
+	position: absolute;
+	left: 30%;
+}
+.indexMode>a:after{
+	content: "";
+	width: 0px;
+	height: 50px;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	z-index: -1;
+	background-color:#FCA311;
+	transition: width 0.5s;
+}
+.indexMode>a>:hover div{
+	z-index: 10;
+
+}
+.indexMode>a:hover{
+	color: #fff;
+	border: 0;
+}
+.indexMode>a:hover:after{
+	width: 180px;
+	z-index: 1;
+
+}

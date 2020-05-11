@@ -1,0 +1,343 @@
+
+.soulNavImg{
+    width:100%;
+    height: 50%;
+    margin-bottom: 2%;
+}
+/**旋转体**/
+.preloader{
+    height: 100%;
+    width: 100%;
+    padding: 20px 0 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    perspective: 700;
+}
+.loader{
+    text-align: center;
+    margin: 5px;
+    border-radius: 50%;
+    border: 4px solid #002B5A;;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.loader-inner-1{
+    animation-delay: 0.2s;
+    animation: change_first_circle 2s ease-in-out infinite;
+}
+.loader-inner-2{
+    animation-delay: 0.2s;
+    animation: change_second_circle 2s ease-in-out infinite;
+}
+.loader-inner-3{
+    animation-delay: 0.2s;
+    width: 100px;
+    height: 100px;
+    animation: change_last_circle 3s linear  infinite;
+}
+@keyframes change_first_circle {
+    50%{ transform: rotateX(360deg) scale(0.8); }
+}
+@keyframes change_second_circle {
+    50%{ transform: rotateY(360deg) scale(0.8); }
+}
+@keyframes change_last_circle {
+    50%{ transform: rotateX(360deg) scale(0.8); }
+}
+/**旋转体 end**/
+
+/**科学家标题图**/
+.soulRotator{
+	border-radius:10px;
+    overflow: hidden;
+    soulRotator-shadow: 0 0 3px rgba(0,0,0,0.5);
+    position: relative;
+}
+.soulRotator:before{
+    content: "";
+    background: rgba(0,0,0,0.5);
+    soulRotator-shadow: 0 0 20px #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+    transition: all 0.5s ease-out 0.5s;
+}
+.soulRotator:hover:before{
+    left: 0;
+    right: 0;
+    soulRotator-shadow: 0 0 0 #fff;
+    transition-delay: 0s;
+}
+.soulRotator img{
+    width: 100%;
+    height: auto;
+    transition: all 0.8s ease-out 0s;
+}
+.soulRotator:hover img{ opacity: 0.7; }
+.soulRotator .soulRotator-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.soulRotator .title{
+    padding: 25px;
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.35s ease-out 0s;
+}
+.soulRotator .icon{
+    list-style: none;
+    padding: 0 25px;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.35s ease-out 0s;
+}
+.soulRotator .icon li{ display: inline-block; }
+.soulRotator .icon li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.soulRotator .icon li a:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #c92853;
+    border-radius: 50%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.soulRotator .icon li a:hover:after{ top: 0; }
+.soulRotator .description{
+	width: 50%;
+    padding: 25px 25px 25px 60px;
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: right;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.35s ease-out 0s;
+}
+.soulRotator:hover .title,
+.soulRotator:hover .icon,
+.soulRotator:hover .description{
+    opacity: 0.7;
+    transition-delay: 0.5s;
+}
+@media only screen and (max-width:990px){
+    .soulRotator{ margin-bottom: 30px; }
+}
+/**科学家标题图 end**/
+
+.soulScientist>.row>div{
+	margin-top: 20px;
+}
+.soulScientist>.row>div:last-of-type{
+	padding-bottom:50px;
+	border-bottom: 1px solid red;
+	margin-bottom:50px;
+}
+
+/**肖像图片**/
+.portrait{
+    portrait-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: 50px;
+    border-radius:10px;
+}
+.portrait:hover{
+	cursor: pointer;
+}
+.portrait img{
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+}
+.portrait .portrait-content{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20% 30px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius:10px;
+}
+.portrait .portrait-content>a{
+	display:block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.portrait:hover .portrait-content{
+    animation-name: loading;
+    animation-duration: 1200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 1;
+}
+.portrait .title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+.portrait .post{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:6;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+.portrait .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.portrait .icon li{ display: inline-block; }
+.portrait .icon li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 5px;
+    transition: all 0.3s ease 0s;
+}
+.portraitP{
+	position:absolute;
+	font-size: 16px;
+    color: #fff;
+    bottom: 5%;
+    right: 10%;
+   
+}
+.portraitP:hover{
+	color: #FCA311;
+}
+@keyframes loading{
+    0%{
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40%{
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    60%{
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80%{
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    100%{
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@media only screen and (max-width:990px){
+    .portrait{ margin-bottom: 20px; }
+}       
+/**肖像图片end**/
+.soulAll{
+    width: 100%;
+    margin-top: 50px;
+}
+.soulAllBox{
+    text-align: center;
+    width:100%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.soulAllBox>a{
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: 100%;
+    border: 1px solid #FCA311;
+    color: #000;
+    border-radius:5px;
+    font-size: 20px;
+    z-index: 0;
+    padding: 0;
+    position: relative;
+}
+.soulAllBox>a:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 103%;
+    background-color: #FCA311;
+    border-radius:5px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: -1;
+    transition: width 0.5s;
+   
+}
+.soulAllBox>a:hover{
+    color: #fff;
+}
+.soulAllBox>a:hover:before{
+    width: 101%;
+}
+.portrait>a{
+    text-decoration: none;
+}

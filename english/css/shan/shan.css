@@ -1,0 +1,58 @@
+
+			.Subpage_4 {
+				position: relative;
+				top: 50px;
+				margin-bottom: 80px;
+			}
+			/*标题*/
+		
+			.Subpage_4 h1 {
+				color: darkgray;
+				margin-bottom: 60px;
+			}
+			/*/标题*/
+			/*清除浮动*/
+			
+			.claer {
+				clear: both;
+			}
+			/*左边部分*/
+			.left-6{
+				padding-right: 30px;
+				padding-left: 15px;
+			}
+			.right-6{
+				padding-right:15px;
+				padding-left: 30px;
+			}
+			.left-6 img {
+				width: 100%;
+			}
+			.left-6 .list-title h4 {
+				
+				line-height: 25px;
+				padding: 20px 0;
+			}
+			.list-title-br {
+				width: 200px;
+				margin-bottom: 30px;
+				border-bottom: 1px solid goldenrod;
+			}
+			
+			.left-6 .list-title span {
+				padding: 10px 0;
+			}
+			
+			.left-6 .list-title h6 {
+				color: gray;
+			}
+			.left-6 .list-title a{
+				text-decoration: none;
+			}
+			.left-6 .list-title a:hover h6 {
+				
+				color: goldenrod;
+			}
+			.left-6-12 {
+				padding: 0;
+			}

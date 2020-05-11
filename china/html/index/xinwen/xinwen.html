@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>科技中国</title>
+		<link rel="stylesheet" href="../../../iconfont\iconfont.css">	
+		<link rel="stylesheet" type="text/css" href="../../../frame\bootstrap-3.3.7\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../frame\list\css\normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../frame\list\css\default.css">
+		<link rel="stylesheet" type="text/css" href="../../../frame\list\css\styles.css">
+		<link rel="stylesheet" type="text/css" href="../../../css\indexani.css">
+		<link rel="stylesheet" type="text/css" href="../../../css\inquiry.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/index.css" />
+		<link rel="stylesheet" href="css/element.min.css">
+		<link rel="stylesheet" href="css/xinwen.css">
+	</head>
+<body>
+	
+	<!--模式切换-->
+	<div class="trigger">
+		
+		<a href="../../../../english/html/index/xinwen/xinwen.html"><span class="iconfont" >&#xe604;</span></a>
+	</div>
+	<!--模式切换end-->
+
+
+<!--头部 LOGO 导航下拉框 -->
+	<div class="navLogo">
+	<!--LOGO-->	
+	<!--LOGO end-->
+
+		<!--导航栏-->
+		<div class="nav">
+		  <button class="btn-nav">
+		    <span class="icon-bar top"></span>
+		    <span class="icon-bar middle"></span>
+		    <span class="icon-bar bottom"></span>
+		  </button>
+		</div>
+
+		<div class="nav-content hideNav hidden">
+		  <ul class="nav-list container">
+		   <li class="nav-item"><a href="../../../index.html" class="item-anchor">首頁</a></li>
+		    <li class="nav-item"><a href="../../../soul.html" class="item-anchor">国魂</a></li>
+		    <li class="nav-item"><a href="../../../science.html" class="item-anchor">科学大事件</a></li>
+		    <li class="nav-item"><a href="../../../shan.html" class="item-anchor">科技摇篮</a></li>
+		    <li class="nav-item"><a href="../../../live.html" class="item-anchor">科技生活</a></li>
+		  </ul>
+		</div>
+		<!--导航栏end-->
+	</div>
+	<!--头部 LOGO 导航下拉框 end-->
+
+<div class="bannerImg">
+	<img src="../../../img/index/xinwen/banner.jpg">
+	<div class="suspend LineKay">科技中国</div>
+</div>
+
+<div id="myVue">
+
+	<template class="s">
+		<el-tabs v-model="activeName" @tab-click="handleClick">
+			<el-tab-pane class="a" label="2015" name="second">
+
+				<div class="row">
+					<div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2015/beidou/zhanshi3.jpg">
+			                <a href="../2015/beidou.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">北斗系统</h3>
+				                    <span class="post">世界一流</span>
+				                    <div class="social">
+				                      <p>北斗系统全球组网首星发射成功</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		           <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2015/changzheng/zhanshi3.jpg">
+			                <a href="../2015/changzheng.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">长征六号</h3>
+				                    <span class="post">一箭多星</span>
+				                    <div class="social">
+				                      <p>长征系列运载火箭家族再添新成员</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2015/yongci/zhanshi1.jpg">
+			                <a href="../2015/yongci.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">永磁高铁</h3>
+				                    <span class="post">永磁驱动时代</span>
+				                    <div class="social">
+				                      <p>实现高速方波弱磁控制和高速平稳重投</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2015/jiqiren/zhanshi1.jpg">
+			                <a href="../2015/jiqiren.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">液态金属机器</h3>
+				                    <span class="post">世界首台</span>
+				                    <div class="social">
+				                      <p>液态金属机器一系列非同寻常的习性已相当接近一些自然界简单的软体生物</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+
+				</div>
+
+			</el-tab-pane>
+			<el-tab-pane label="2016" name="first">
+				<div class="row">
+
+		           <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2016/jian20/zhanshi1.jpg">
+			                <a href="../2016/jian20.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">歼20</h3>
+				                    <span class="post">跨代新机</span>
+				                    <div class="social">
+				                      <p>中国自主研制的第五代战斗机</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2016/tianyan/zhanshi2.jpg">
+			                <a href="../2016/tianyan.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">天眼</h3>
+				                    <span class="post">世界最大</span>
+				                    <div class="social">
+				                      <p>世界最大单口径射电望远镜"天眼"</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2016/taiyang/zhanshi2.jpg">
+			                <a href="../2016/tiayang.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">人造太阳</h3>
+				                    <span class="post">5000万度高温</span>
+				                    <div class="social">
+				                      <p>中国在稳态磁约束聚变研究方面继续走在国际前列</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+
+				</div>
+			</el-tab-pane>
+			<el-tab-pane label="2017" name="third">
+				
+				<div class="row">
+					<div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2017/mozihao/zhanshi2.jpg">
+			                <a href="../2017/mozihao.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">"墨子"号</h3>
+				                    <span class="post">世界首颗</span>
+				                    <div class="social">
+				                      <p>我国在世界上首次实现卫星和地面之间的量子通信。</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2017/001a/zhanshi2.jpg">
+			                <a href="../2017/001a.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">001A型航空母舰</h3>
+				                    <span class="post">首艘自主建造</span>
+				                    <div class="social">
+				                      <p>中国真正意义上的第一艘国产航空母舰</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+					
+					<div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2017/005/zhanshi2.jpg">
+			                <a href="../2017/005.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">055型驱逐舰</h3>
+				                    <span class="post">万吨巨轮</span>
+				                    <div class="social">
+				                      <p>采用全燃动力、新型相控阵雷达、综合射频系统，配备112单元通用垂直发射系统</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+		            
+
+		            
+
+		           
+
+				</div>
+
+			</el-tab-pane>
+			<el-tab-pane label="2018" name="fourth">
+				
+				<div class="row">
+					<div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/hunxin/xinpian.jpg">
+			                <a href="../hunxin.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">魂芯二号-A</h3>
+				                    <span class="post">千亿运算</span>
+				                    <div class="social">
+				                      <p>"魂芯二号A芯片"实际运算性能业界同类最强</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2018/kunlong/zhanshi1.jpg">
+			                <a href="../2018/kunlong.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">鲲龙-600</h3>
+				                    <span class="post">三剑客之一</span>
+				                    <div class="social">
+				                      <p>中国首款大型水陆两栖飞机</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2018/feizang/zhanshi1.jpg">
+			                <a href="../2018/feizang.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">肺脏再生</h3>
+				                    <span class="post">世界首创</span>
+				                    <div class="social">
+				                      <p>人类肺脏再生成为现实</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2018/change4/zhanshi1.jpg">
+			                <a href="../2018/change4.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">嫦娥四号</h3>
+				                    <span class="post">世界首个</span>
+				                    <div class="social">
+				                      <p>世界首个在月球背面软着陆和巡视探测的航天器</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+		            <div class="col-md-4">
+			            <div class="box">
+			                <img src="../../../img/index/2018/daqiao/zhanshi4.jpg">
+			                <a href="../2018/daqiao.html" class="boxLink">
+				                <div class="box-content">
+
+				                    <h3 class="title">港珠澳大桥</h3>
+				                    <span class="post">世界最长</span>
+				                    <div class="social">
+				                      <p>世界上最长跨海大桥：总长度是48.3千米</p>
+				                     
+				                    </div>
+				                </div>
+			                </a>
+			            </div>
+		            </div>
+
+				</div>
+
+			</el-tab-pane>
+
+			<el-tab-pane label="" name="1">
+
+			</el-tab-pane>
+
+		</el-tabs>
+	</template>
+	
+	
+</div>
+
+<!--页脚-->
+<div class="container footer">
+	Copyright © 2019  Company 
+	<p>天罗小组</p>
+	
+</div>
+<!--页脚end-->
+	<script src="../../../frame/jquery/jquery3.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../../frame\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../../frame\swiper-4.5.0\dist\js\swiper.min.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/element.min.js"></script>
+	<script type="text/javascript" src="js/xinwen.js"></script>
+</body>
+</html>

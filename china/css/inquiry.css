@@ -1,0 +1,89 @@
+
+@media (min-width: 768px)  and (max-width: 992px){		/*平板尺寸*/
+	.headerText{
+		top: 20%;
+	}
+	.headerText>h1{
+		font-size: 25px;
+	}
+	.headerText>p{
+		overflow : hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 4;
+	    -webkit-box-orient: vertical;
+	}
+}
+	
+@media (min-width:  992px)  and (max-width: 1200px){		/*pc端*/
+	
+}
+
+@media (max-width:768px){		/*移动端尺寸*/
+	.chinaNtroduce>img{
+		margin-top:50px;
+	}
+	.chinaNtroduceText>div{
+		margin: 20px 0;
+		width: 95%;
+		height: 70px;
+		overflow : hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
+	}
+	.chinaNtroduceImg>img{
+		width: 50%;
+		height: 50%;
+	}
+	.chinaNtroduceWireLfte{
+		margin: 35px 0 0 0;
+	}
+	.chinaNtroduceWireRight{
+		margin: 35px 0 0 0;
+	}
+	.chronicleText{
+		margin-top: 0;
+	}
+	.chronicleTextP{
+		text-align: center;
+	}
+	.header{
+		margin-top: 50px;
+		height: 250px;
+	}
+	.headerText{
+		top: 10%;
+	}
+	.headerText>h1{
+		font-size: 25px;
+	}
+	.headerText>p{
+		overflow : hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 3;
+	    -webkit-box-orient: vertical;
+	}
+
+	.navBottom{
+		display: none;
+	}
+	.bottomNav{
+		bottom: 1%;
+	}
+	.screenHeight{
+		box-shadow:none;
+	}
+	.navImgBox{
+		height: 100%;
+	}
+	.partyMy{
+		font-size: 70px;	
+	}
+}
+
+@media (min-width: 1200px){		/*大屏幕尺寸*/
+	
+}

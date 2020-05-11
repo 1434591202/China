@@ -1,0 +1,166 @@
+
+		body {
+			background: border-box;
+		}
+		
+		.Subpage_2 .item img {
+			width: 100%;
+		}
+		/*左半内容*/
+		
+		.list-left .list-left-title {
+			position: relative;
+			top: 80px;
+			font-weight: lighter;
+			font-size: 40px;
+			font-family: "微软雅黑";
+			padding-bottom: 35px;
+		}
+		
+		.list-left-title-hr {
+			width: 100px;
+			border-bottom: 1px solid goldenrod;
+			margin-top: 80px;
+			margin-bottom: 20px;
+		}
+		
+		.list-left .list-left-content {
+			position: relative;
+			font-weight: lighter;
+		}
+		
+		
+		.list-content01 {
+			padding: 0px 0px 0px 0px;
+		}
+		
+		.list-content01 b {
+			line-height: 40px;
+		}
+		
+		.list-left .list-content p {
+			margin-top: 5px;
+			color: black;
+		}
+		/*按钮*/
+		
+		.list-buttom button {
+			text-align: center;
+			border-color: #f0ad4e;
+			margin-top: 30px;
+		}
+		
+		.list-buttom button:hover {
+			color: white;
+			border-color: #f0ad4e;
+			transition: 0.2s;
+			background: #f0ad4e;
+		}
+		/*/按钮*/
+		/*后退*/
+		
+		.list-left .back {
+			position: relative;
+			top: 60px;
+			margin-bottom: 100px;
+		}
+		
+		.list-left .back a {
+			color: gray;
+			text-decoration: none;
+		}
+		
+		.list-left .back a:hover {
+			color: gold;
+		}
+		/*/后退*/
+		/*/左半内容*/
+		/*位于中间的内容*/
+		
+		.list-center {
+			position: relative;
+			top: 100px;
+			height: 695px;
+			overflow: hidden;
+		}
+		
+		.list-center img {
+			width: 100%;
+			height: 100%;
+			transition: 0.5s all ease;
+		}
+		
+		.list-center:hover img {
+			transform: scale(1.2);
+		}
+		/*/位于中间的内容*/
+		/*右半内容*/
+		
+		.list-right {
+			position: relative;
+			top: 100px;
+			height: 695px;
+			overflow: auto;
+		}
+		
+		.list-right::-webkit-scrollbar {
+			width: 2px;
+			height: 2px;
+			background: #ccc;
+			border-radius: 1px;
+			/*外层轨道*/
+		}
+		
+		.list-right::-webkit-scrollbar-thumb {
+			display: block;
+			width: 2px;
+			margin: 0 auto;
+			border-radius: 1px;
+			background: gold;
+			/*内层轨道*/
+		}
+		
+		.list-right p {
+			margin-right: 30px;
+			line-height: 30px;
+			padding: 10px 0
+		}
+		/*/右半内容*/
+		.list-left-content img{
+			display: none;
+		}
+
+@media (max-width: 998px){
+	.Subpage_2 p,h2,h3,b{
+		text-align: center;
+	}
+	.list-left-title-hr{
+		width: 100%;
+	}
+	
+	.list-buttom{
+		position: absolute;
+		bottom: -65px;
+		right: 5%;
+	}
+
+	.back{
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
+	.list-right {
+			position: relative;
+			top: 0px;
+			height: 695px;
+			overflow: auto;
+	}
+	.imgHiede{
+		display: none;
+	}
+	.list-left-content img{
+		width: 50%;
+		display: block;
+		margin-left: 25%;
+	}
+}
